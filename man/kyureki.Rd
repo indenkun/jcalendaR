@@ -24,7 +24,7 @@ kyureki2seireki(
 \arguments{
 \item{date}{Date to be converted. It should always include the year, month, and day.}
 
-\item{calendar}{Select whether the Western calendar is Gregorian or Julian.}
+\item{calendar}{Select whether the calendar is Gregorian or Julian.}
 
 \item{era}{Whether the Gengo of the Japanese calendar is the Southern or Northern dynasty system, the system used in the Kanto region, the Heike, and Kyoto respectively, or no era names.}
 
@@ -38,7 +38,7 @@ kyureki2seireki(
 String type date.
 }
 \description{
-This is a set of functions for mutual conversion between Kyureki that the lunar calendar and the western calendar, the former calendar system of Japan. Kyureki the lunar calendar here is a calendar system that was never actually used, assuming that the Tenpo calendar was extended after the 6th year of Meiji.
+This is a set of functions for mutual conversion between Kyureki that the lunar calendar and the calendar, the former calendar system of Japan. Kyureki the lunar calendar here is a calendar system that was never actually used, assuming that the Tenpo calendar was extended after the 6th year of Meiji.
 }
 \references{
 The data for the Kyureki calendar and era names refer to the following data.

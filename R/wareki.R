@@ -1,10 +1,10 @@
 #' wareki
 #'
 #' @description
-#' This is a set of functions for mutual conversion from Wareki that Japanese calendar dates to Western calendar dates. Before 1872, the Japanese calendar was used as the lunar calendar.
+#' This is a set of functions for mutual conversion from Wareki that Japanese calendar dates to the Julian or Gregorian calendar dates. Before 1872, the Japanese calendar was used as the lunar calendar.
 #'
 #' @param date Date to be converted. It should always include the year, month, and day.
-#' @param calendar Select whether the Western calendar is Gregorian or Julian.
+#' @param calendar Select whether the calendar is Gregorian or Julian.
 #' @param era Whether the Gengo of the Japanese calendar is the Southern or Northern dynasty system, the system used in the Kanto region, the Heike, and Kyoto respectively, or no era names.
 #' @param one Whether to write the year in kanji as the first year or leave it as a number.
 #' @param leap.month Whether to write leap months in Kanji or Hiragana.
@@ -173,10 +173,10 @@ wareki2seireki <- function(date,
 #' kyureki
 #'
 #' @description
-#' This is a set of functions for mutual conversion between Kyureki that the lunar calendar and the western calendar, the former calendar system of Japan. Kyureki the lunar calendar here is a calendar system that was never actually used, assuming that the Tenpo calendar was extended after the 6th year of Meiji.
+#' This is a set of functions for mutual conversion between Kyureki that the lunar calendar and the calendar, the former calendar system of Japan. Kyureki the lunar calendar here is a calendar system that was never actually used, assuming that the Tenpo calendar was extended after the 6th year of Meiji.
 #'
 #' @param date Date to be converted. It should always include the year, month, and day.
-#' @param calendar Select whether the Western calendar is Gregorian or Julian.
+#' @param calendar Select whether the calendar is Gregorian or Julian.
 #' @param era Whether the Gengo of the Japanese calendar is the Southern or Northern dynasty system, the system used in the Kanto region, the Heike, and Kyoto respectively, or no era names.
 #' @param one Whether to write the year in kanji as the first year or leave it as a number.
 #' @param leap.month Whether to write leap months in Kanji or Hiragana.

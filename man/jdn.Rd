@@ -19,7 +19,7 @@ jdn2calendar(
 
 \item{jdn}{Select Julius Date Number or Modified Julius Date Number.}
 
-\item{calendar}{Select whether the Western calendar is Gregorian or Julian.}
+\item{calendar}{Select whether the calendar is Gregorian or Julian.}
 
 \item{n}{Julian Date Number or Modified Julian Date Number value.}
 

@@ -4,7 +4,7 @@
 #'
 #' @param date Date to be converted. It should always include the year, month, and day.
 #' @param jdn Select Julius Date Number or Modified Julius Date Number.
-#' @param calendar Select whether the Western calendar is Gregorian or Julian.
+#' @param calendar Select whether the calendar is Gregorian or Julian.
 #'
 #' @rdname jdn
 #'

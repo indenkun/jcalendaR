@@ -4,7 +4,7 @@ Title: Interconversion between the Japanese Calendar System and the Western Cale
 Version: 0.0.0.9000
 Author: indenkun
 Maintainer: indenkun <bolg@indenkun.hatenabolg.com>
-Description: This is a set of simple utility functions to perform mutual conversion between the current Japanese calendar system that Wareki, the old japanese calendar system that the Kyureki calendar and the western calendar.
+Description: This is a set of simple utility functions to perform mutual conversion between the current Japanese calendar system that Wareki, the old japanese calendar system that the Kyureki calendar and the Julian and Gregorian calendar.
     To calculate each calendar method, it convert to Julian Day Number.
 License: MIT + file LICENSE
 Encoding: UTF-8
