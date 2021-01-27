@@ -105,5 +105,4 @@ kyureki_JDN <- kyureki_JDN[order(kyureki_JDN$kyureki_year),]
 
 rm(i, era.jsondata,kyureki_JDN_1,gregorian_jdn_calender,gregorian_kyureki_calender,gregorian_kyureki_JDN)
 
-usethis::use_data(era_east, era_heishi, era_kyoto, era_north, era_north, era_south,  kyureki_JDN,
-                  overwrite = TRUE, internal = TRUE)
+usethis::use_data(era_east, era_heishi, era_kyoto, era_north, era_south, kyureki_JDN, internal = TRUE, overwrite = TRUE)

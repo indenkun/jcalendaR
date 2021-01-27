@@ -12,6 +12,11 @@
 #'
 #' @return String type date.
 #'
+#' @references
+#' The data for the Kyureki calendar and era names refer to the following data.
+#'
+#' \url{https://github.com/manakai/data-locale}
+#'
 #' @rdname wareki
 #' @export
 
@@ -179,6 +184,11 @@ wareki2seireki <- function(date,
 #'
 #' @return String type date.
 #'
+#' @references
+#' The data for the Kyureki calendar and era names refer to the following data.
+#'
+#' \url{https://github.com/manakai/data-locale}
+#'
 #' @rdname kyureki
 #' @export
 
@@ -333,6 +343,11 @@ kyureki2seireki <- function(date,
 #' @param sep The way the date is separated when the last date is written.
 #'
 #' @return String type date.
+#'
+#' @references
+#' The data for the Kyureki calendar and era names refer to the following data.
+#'
+#' \url{https://github.com/manakai/data-locale}
 #'
 #' @rdname wareki2kyureki
 #' @export

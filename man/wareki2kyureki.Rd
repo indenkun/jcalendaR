@@ -38,3 +38,8 @@ String type date.
 \description{
 A set of functions for mutual conversion between Kyureki that the old Japanese calendar and Wareki that the current Japanese calendar. For years before 1872, Kyureki and Wareki are identical. After 1873, the Gregorian calendar was adopted in Japan, and there is a difference from there.
 }
+\references{
+The data for the Kyureki calendar and era names refer to the following data.
+
+\url{https://github.com/manakai/data-locale}
+}

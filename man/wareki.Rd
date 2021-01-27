@@ -40,3 +40,8 @@ String type date.
 \description{
 This is a set of functions for mutual conversion from Wareki that Japanese calendar dates to Western calendar dates. Before 1872, the Japanese calendar was used as the lunar calendar.
 }
+\references{
+The data for the Kyureki calendar and era names refer to the following data.
+
+\url{https://github.com/manakai/data-locale}
+}

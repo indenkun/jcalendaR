@@ -40,3 +40,8 @@ String type date.
 \description{
 This is a set of functions for mutual conversion between Kyureki that the lunar calendar and the western calendar, the former calendar system of Japan. Kyureki the lunar calendar here is a calendar system that was never actually used, assuming that the Tenpo calendar was extended after the 6th year of Meiji.
 }
+\references{
+The data for the Kyureki calendar and era names refer to the following data.
+
+\url{https://github.com/manakai/data-locale}
+}

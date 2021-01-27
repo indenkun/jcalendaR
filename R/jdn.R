@@ -8,6 +8,13 @@
 #'
 #' @rdname jdn
 #'
+#' @references
+#' Fliegel, H. F. and Van Flandern, T. C., "A Machine Algorithm for Processing Calendar Dates," Communications of the ACM 11, p. 657, 1968.
+#'
+#' Hatcher, D. A., Simple formulae for Julian day numbers and calendar dates, Quarterly Journal of the Royal Astronomical Society, v. 25, p. 53-55, 1984.
+#'
+#' Meeus, J., Astronomical Algorithms, 1998.
+#'
 #' @export
 
 calendar2jdn <- function(date, jdn = c("jdn", "mjd"), calendar = c("gregorian", "julian")){

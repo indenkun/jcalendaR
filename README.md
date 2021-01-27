@@ -150,13 +150,17 @@ Wikipedia](a.wikipedia.org/w/index.php?title=ユリウス通日)の式を用い�
 
 -   [manakai/data-locale](https://github.com/manakai/data-locale)
 
-# Known Issue and Future Tasks
+# Known Issues and Future Tasks
 
 -   関数製作者は暦についての専門家ではありません。なにか不備があればお知らせください。
 -   参照元データの典拠である日本暦日原典の対照表が、どの暦法を元にしているのか分かっていません。単にデータだけを利用しています。
 -   不適切な値が入力された場合に警告文を表示しNAを出力する場合と処理が完了しない警告があるので統一したい。
 -   ドキュメントをちゃんと整えたい。
 -   琉球暦未対応。
+
+# notices
+
+-   DESCRIPTIONに記載しているメールアドレスはダミーです。なにかあればISSUEに記載してください。
 
 # License
 
