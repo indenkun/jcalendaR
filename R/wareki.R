@@ -145,7 +145,7 @@ wareki2seireki <- function(date,
       if(calendar == "gregorian") ans <- paste(y, m, d, sep = sep)
       else if(calendar == "julian") ans <- jdn2calendar(calendar2jdn(paste(y, m, d, sep = "/"), jdn = "jdn", calendar = "gregorian"), jdn = "jdn", calendar = "julian", sep = sep)
     }else{
-      if(Number_kyureki.month(y, m, era = "non") < d){
+      if(number_kyureki.month(y, m, era = "non") < d){
         warning("The number of days entered does not exist for the month.", call. = FALSE)
         return(NA)
       }
@@ -308,7 +308,7 @@ kyureki2seireki <- function(date,
       return(NA)
     }
 
-    if(Number_kyureki.month(y, m, era = "non") < d){
+    if(number_kyureki.month(y, m, era = "non") < d){
       warning("The number of days entered does not exist for the month.", call. = FALSE)
       return(NA)
     }

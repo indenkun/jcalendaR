@@ -104,12 +104,12 @@ existence_leap.month("明治3", existence = "number")
 旧暦の指定した年の指定した月が何日あるか。閏月を指定した場合、その年に閏月がないならその旨を警告文で出す。
 
 ``` r
-Number_kyureki.month("明治2", 1)
+number_kyureki.month("明治2", 1)
 #> [1] 30
-Number_kyureki.month("明治2", "閏1")
+number_kyureki.month("明治2", "閏1")
 #> Warning: There are no leap months in that year.
 #> [1] NA
-Number_kyureki.month("明治3", "閏10")
+number_kyureki.month("明治3", "閏10")
 #> [1] 29
 ```
 

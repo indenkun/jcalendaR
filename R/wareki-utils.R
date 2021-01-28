@@ -10,7 +10,7 @@
 #' @export
 
 
-Number_kyureki.month <- function(kyureki.year, kyureki.month, era = c("south", "north", "east", "heishi", "kyoto", "non")){
+number_kyureki.month <- function(kyureki.year, kyureki.month, era = c("south", "north", "east", "heishi", "kyoto", "non")){
   era <- match.arg(era)
 
   unname(mapply(function(kyureki.year, kyureki.month){
