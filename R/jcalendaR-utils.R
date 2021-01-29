@@ -1,6 +1,7 @@
 #' jcalendaR-utils
 #' @description
 #' This is a set of utility functions related to the Kyureki calendar. `number_kyureki.month()` checks how many days there were in a month by specifying the number of years and months in the Kyureki calendar. `exixtence_leap.month()` checks if there was a leap month in a year by entering the number of years in the Kyureki calendar.
+#' `era.name()` will output the era names of the corresponding year in this package.
 #'
 #' @param kyureki.year The number of years in the Kyureki calendar to check.
 #' @param kyureki.month The number of strings of months in the Kyureki calendar to check.
@@ -63,6 +64,7 @@ existence_leap.month <- function(kyureki.year, existence = c("logical", "number"
   existence <- match.arg(existence)
   era <- match.arg(era)
 
+  unname(sapply(kyureki.year, function(kyureki.year){
   if(era == "south") era.data <- era_south
   else if(era == "north") era.data <- era_north
   else if(era == "east") era.data <- era_east
@@ -86,4 +88,20 @@ existence_leap.month <- function(kyureki.year, existence = c("logical", "number"
   else if(existence == "number") ans <- as.numeric(leap.month)
 
   ans
+  }))
+}
+
+#' @rdname jcalendaR-utils
+#' @export
+
+era.name <- function(era = c("south", "north", "east", "heishi", "kyoto")){
+  era <- match.arg(era)
+
+  if(era == "south") era.data <- era_south
+  else if(era == "north") era.data <- era_north
+  else if(era == "east") era.data <- era_east
+  else if(era == "heishi") era.data <- era_heishi
+  else if(era == "kyoto") era.data <- era_kyoto
+
+  unique(era.data$era_name)
 }

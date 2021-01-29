@@ -1,5 +1,28 @@
+# All data is based on https://github.com/manakai/data-locale.
+# The original data about the license is as follows.
+# > * License
+# >
+# > You are granted a license to use, reproduce and create derivative
+# > works of these files.
+# >
+# > Per CC0 <https://creativecommons.org/publicdomain/zero/1.0/>, to the
+# > extent possible under law, the author of the JSON files and this
+# > document has waived all copyright and related or neighboring rights to
+# > the JSON files and this document.
+
 library(tidyverse)
 library(jsonlite)
+# library(lubridate)
+# library(jcalendaR)
+#
+# jholidays.data <- read_json("https://raw.githubusercontent.com/manakai/data-locale/master/data/calendar/jp-holidays.json")
+# jholidays.data <- data.frame(gregorian_calendar = names(jholidays.data),
+#                              holiday_name = unname(unlist(jholidays.data))) %>%
+#   mutate(gregorian_year = year(gregorian_calendar),
+#          JDN = calendar2jdn(gregorian_calendar),
+#          kyureki_calendar = seireki2kyureki(gregorian_calendar, era = "non", sep = "/")) %>%
+#   mutate(kyureki_year = as.numeric(str_split(kyureki_calendar, pattern = "/", simplify = TRUE)[,1])) %>%
+#   select(JDN, holiday_name, gregorian_year, kyureki_year)
 
 gregorian_kyureki_calender <- read_tsv("https://raw.githubusercontent.com/manakai/data-locale/master/data/calendar/kyuureki-map.txt",
                                        col_names = c("gregorian_calender", "kyureki_calender"))
@@ -105,4 +128,5 @@ kyureki_JDN <- kyureki_JDN[order(kyureki_JDN$kyureki_year),]
 
 rm(i, era.jsondata,kyureki_JDN_1,gregorian_jdn_calender,gregorian_kyureki_calender,gregorian_kyureki_JDN)
 
+# usethis::use_data(era_east, era_heishi, era_kyoto, era_north, era_south, kyureki_JDN, jholidays.data, internal = TRUE, overwrite = TRUE)
 usethis::use_data(era_east, era_heishi, era_kyoto, era_north, era_south, kyureki_JDN, internal = TRUE, overwrite = TRUE)
