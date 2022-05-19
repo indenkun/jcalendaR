@@ -21,6 +21,10 @@ number_kyureki.month <- function(kyureki.year, kyureki.month, era = c("south", "
     else if(era == "heishi") era.data <- era_heishi
     else if(era == "kyoto") era.data <- era_kyoto
 
+    if(grepl("[[:digit:]]+\u6708$", kyureki.month)){
+      kyureki.month <- sub("\u6708$", "", kyureki.month)
+    }
+
     if(era != "non"){
       if(!is.character(kyureki.year)){
         warning("For the argument of `era`, a value other than `non` is selected, but the era is not entered.")

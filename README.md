@@ -88,28 +88,34 @@ kyureki2wareki("令和2年11月18日")
 
 ### utils
 
-旧暦の指定した年に閏月があるかどうか、理論型か閏月の値で答える。
+旧暦の指定した年に閏月があるかどうか、理論型か閏月の値で答えます。
+
+指定する年の値は年号と数字で構成される必要があります。数字の後ろに年がついているかどうかは問いません。
 
 ``` r
 existence_leap.month("明治2")
 #> [1] FALSE
 existence_leap.month("明治2", existence = "number")
 #> [1] NA
-existence_leap.month("明治3", existence = "logical")
+existence_leap.month("明治3年", existence = "logical")
 #> [1] TRUE
-existence_leap.month("明治3", existence = "number")
+existence_leap.month("明治3年", existence = "number")
 #> [1] 10
 ```
 
-旧暦の指定した年の指定した月が何日あるか。閏月を指定した場合、その年に閏月がないならその旨を警告文で出す。
+旧暦の指定した年の指定した月が何日あるか。閏月を指定した場合、その年に閏月がないならその旨を警告文で出します。
+
+指定する年の値は年号と数字で構成される必要があります。数字の後ろに年がついているかどうかは問いません。
+
+また、指定する月は数値または文字列で、文字列の場合に数字の後ろに月がついているかどうかは問いません。
 
 ``` r
 number_kyureki.month("明治2", 1)
 #> [1] 30
-number_kyureki.month("明治2", "閏1")
+number_kyureki.month("明治2年", "閏1")
 #> Warning: There are no leap months in that year.
 #> [1] NA
-number_kyureki.month("明治3", "閏10")
+number_kyureki.month("明治3", "閏10月")
 #> [1] 29
 ```
 
