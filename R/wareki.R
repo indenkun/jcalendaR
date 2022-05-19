@@ -76,7 +76,11 @@ seireki2wareki <- function(date,
 
     if(era != "non"){
       era.mark <- era.data$era_name[which(era.data$kyureki_year == max(era.data$kyureki_year[era.data$JDN <= n], na.rm = TRUE))]
-      era.year <- y - max(era.data$kyureki_year[era.data$JDN <= n], na.rm = TRUE) + 1
+      if(n < 2405159){
+        era.year <- y - max(era.data$kyureki_year[era.data$JDN <= n], na.rm = TRUE) + 1
+      }else{
+        era.year <- y - max(era.data$gregorian_year[era.data$JDN <= n], na.rm = TRUE) + 1
+      }
       if(one == "kanji" && era.year == 1) era.year <- "\u5143"
       y <- paste(era.mark, era.year, sep = "")
     }
