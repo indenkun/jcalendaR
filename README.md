@@ -82,8 +82,8 @@ seireki2kyureki("2021/1/1")
 ``` r
 wareki2kyureki("令和3年1月1日")
 #> [1] "令和2年11月18日"
-kyureki2wareki("平成31年1月1日")
-#> [1] "平成31年2月16日"
+kyureki2wareki("令和2年11月18日")
+#> [1] "令和3年1月1日"
 ```
 
 ### utils

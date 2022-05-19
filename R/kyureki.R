@@ -122,7 +122,7 @@ kyureki2seireki <- function(date,
       }
       y <- era.data$kyureki_year[era.data$era_name == era.mark] + era.year - 1
     }else{
-      if(is.na(as.numeric(y))){
+      if(is.na(suppressWarnings(as.numeric(y)))){
         warning("Something other than a number has been entered for the number of years.", call. = FALSE)
         return(NA)
       }

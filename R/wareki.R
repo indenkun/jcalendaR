@@ -104,7 +104,7 @@ wareki2seireki <- function(date,
   era <- match.arg(era)
 
   unname(sapply(date, function(date){
-    if(length(grep("\u5143\u5e74", date)) > 0) date <- sub("\u5143\u5e74" , "1\u5e74", date)
+      if(length(grep("\u5143\u5e74", date)) > 0) date <- sub("\u5143\u5e74" , "1\u5e74", date)
     else if(length(grep("\u5143/", date)) > 0) date <- sub("\u5143/", "1/", date)
     else if(length(grep("\u5143-", date)) > 0) date <- sub("\u5143-", "1-", date)
 
@@ -134,7 +134,7 @@ wareki2seireki <- function(date,
       if(y >= 1873) y <- era.data$gregorian_year[era.data$era_name == era.mark] + era.year - 1
       else if(y <= 1872) y <- era.data$kyureki_year[era.data$era_name == era.mark] + era.year - 1
     }else{
-      if(is.na(as.numeric(y))){
+      if(is.na(suppressWarnings(as.numeric(y)))){
         warning("Something other than a number has been entered for the number of years.", call. = FALSE)
         return(NA)
       }
