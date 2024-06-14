@@ -122,7 +122,7 @@ kyureki_JDN <- kyureki_JDN %>%
 
 # for(i in 1:nrow(kyureki_JDN)) kyureki_JDN[i,] <- c(kyureki_JDN[i,][1:2], arrange(kyureki_JDN[i,][3:15]))
 
-for(i in 1:nrow(kyureki_JDN)) kyureki_JDN[i,] <- c(kyureki_JDN[i,][1:2],kyureki_JDN[i,][3:15][order(kyureki_JDN[i,][3:15])])
+for(i in 1:nrow(kyureki_JDN)) kyureki_JDN[i,] <- c(kyureki_JDN[i,][1:2],kyureki_JDN[i,][3:15][order(unlist(kyureki_JDN[i,][3:15]))])
 
 kyureki_JDN <- kyureki_JDN[order(kyureki_JDN$kyureki_year),]
 
