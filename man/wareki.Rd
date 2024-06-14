@@ -43,5 +43,5 @@ This is a set of functions for mutual conversion from Wareki that Japanese calen
 \references{
 The data for the Kyureki calendar and era names refer to the following data.
 
-\url{https://github.com/manakai/data-locale}
+manakai/data-locale \url{https://github.com/manakai/data-locale}
 }

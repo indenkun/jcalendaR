@@ -41,5 +41,5 @@ A set of functions for mutual conversion between Kyureki that the old Japanese c
 \references{
 The data for the Kyureki calendar and era names refer to the following data.
 
-\url{https://github.com/manakai/data-locale}
+manakai/data-locale \url{https://github.com/manakai/data-locale}
 }

@@ -7,6 +7,11 @@
 #' @param kyureki.month The number of strings of months in the Kyureki calendar to check.
 #' @param era Whether the Gengo of the Japanese calendar is the Southern or Northern dynasty system, the system used in the Kanto region, the Heike, and Kyoto respectively, or no era names.
 #'
+#' @references
+#' The data for the Kyureki calendar and era names refer to the following data.
+#'
+#' manakai/data-locale \url{https://github.com/manakai/data-locale}
+#'
 #' @rdname jcalendaR-utils
 #' @export
 
