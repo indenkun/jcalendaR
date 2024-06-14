@@ -12,6 +12,10 @@
 #'
 #' manakai/data-locale \url{https://github.com/manakai/data-locale}
 #'
+#' @examples
+#' existence_leap.month("\u660e\u6cbb2")
+#' number_kyureki.month("\u660e\u6cbb2", 1)
+#'
 #' @rdname jcalendaR-utils
 #' @export
 

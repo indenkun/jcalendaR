@@ -139,8 +139,7 @@ kyureki2seireki("2101年1月1日", era = "non")
 
 * 関数製作者は暦についての専門家ではありません。なにか不備があればお知らせください。
 * 参照元データの典拠である日本暦日原典の対照表が、どの暦法を元にしているのか分かっていません。単にデータだけを利用しています。詳細はデータの参照元のドキュメントの[https://github.com/manakai/data-locale/blob/master/doc/calendar-kyuureki.txt](https://github.com/manakai/data-locale/blob/master/doc/calendar-kyuureki.txt)を参照してください。
-* 不適切な値が入力された場合に警告文を表示しNAを出力する場合と処理が完了しない警告があるので統一したい。
-* ドキュメントをちゃんと整えたい。
+* 不適切な値が入力された場合に警告文を表示しNAを出力する場合と処理が完了しない警告があり、統一されていません。
 * 琉球暦未対応。
 
 # notices

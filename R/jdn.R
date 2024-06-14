@@ -9,13 +9,17 @@
 #' @rdname jdn
 #'
 #' @references
-#' Julian Day Number [ja] (JD, \url{https://ja.wikipedia.org/wiki/ユリウス通日})
+#' Julian Day Number - Wikipedia [ja] (JD, \url{https://ja.wikipedia.org/wiki/\%E3\%83\%A6\%E3\%83\%AA\%E3\%82\%A6\%E3\%82\%B9\%E9\%80\%9A\%E6\%97\%A5})
 #'
-#' Fliegel, H. F. and Van Flandern, T. C., "A Machine Algorithm for Processing Calendar Dates," Communications of the ACM 11, p. 657, 1968.
+#' Fliegel, H. F., Van Flandern, T. C. (1968) "A Machine Algorithm for Processing Calendar Dates", Communications of the ACM 11, p. 657, \doi{10.1145/364096.364097} .
 #'
-#' Hatcher, D. A., Simple formulae for Julian day numbers and calendar dates, Quarterly Journal of the Royal Astronomical Society, v. 25, p. 53-55, 1984.
+#' Hatcher, D. A. (1984) Simple formulae for Julian day numbers and calendar dates, Quarterly Journal of the Royal Astronomical Society, v. 25, p. 53-55, BibCode:1984QJRAS..25...53H.
 #'
-#' Meeus, J., Astronomical Algorithms, 1998.
+#' Meeus, J. (1998) Astronomical Algorithms. Willmann-Bell, Second English Edition, ISBN:0943396638.
+#'
+#' @examples
+#' jdn2calendar(2459216)
+#' calendar2jdn("2021/1/1")
 #'
 #' @export
 

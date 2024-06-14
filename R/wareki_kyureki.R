@@ -15,6 +15,10 @@
 #'
 #' manakai/data-locale \url{https://github.com/manakai/data-locale}
 #'
+#' @examples
+#' wareki2kyureki("\u4ee4\u548c3\u5e741\u67081\u65e5")
+#' kyureki2wareki("\u4ee4\u548c2\u5e7411\u670818\u65e5")
+#'
 #' @rdname wareki2kyureki
 #' @export
 

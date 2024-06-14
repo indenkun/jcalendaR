@@ -12,6 +12,10 @@
 #'
 #' @return String type date.
 #'
+#' @examples
+#' seireki2kyureki("2021/1/1")
+#' kyureki2seireki("\u4ee4\u548c3\u5e741\u67081\u65e5")
+#'
 #' @references
 #' The data for the Kyureki calendar and era names refer to the following data.
 #'

@@ -33,6 +33,11 @@ era.name(era = c("south", "north", "east", "heishi", "kyoto"))
 This is a set of utility functions related to the Kyureki calendar. `number_kyureki.month()` checks how many days there were in a month by specifying the number of years and months in the Kyureki calendar. `exixtence_leap.month()` checks if there was a leap month in a year by entering the number of years in the Kyureki calendar.
 `era.name()` will output the era names of the corresponding year in this package.
 }
+\examples{
+existence_leap.month("\u660e\u6cbb2")
+number_kyureki.month("\u660e\u6cbb2", 1)
+
+}
 \references{
 The data for the Kyureki calendar and era names refer to the following data.
 

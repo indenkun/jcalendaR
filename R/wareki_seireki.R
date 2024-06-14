@@ -17,6 +17,12 @@
 #'
 #' manakai/data-locale \url{https://github.com/manakai/data-locale}
 #'
+#' @examples
+#' wareki2seireki("\u4ee4\u548c3\u5e741\u67081\u65e5")
+#' seireki2wareki("2021/1/1")
+#' wareki2seireki("\u5929\u6b636\u5e743\u670813\u65e5", calendar = "julian")
+#' seireki2wareki("1578/4/18")
+#'
 #' @rdname wareki
 #' @export
 
