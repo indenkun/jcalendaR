@@ -207,10 +207,6 @@ Wikipedia](https://ja.wikipedia.org/wiki/ユリウス通日)の式を用いて�
 - 不適切な値が入力された場合に警告文を表示しNAを出力する場合と処理が完了しない警告があり、統一されていません。
 - 琉球暦未対応。
 
-# notices
-
-- DESCRIPTIONに記載しているメールアドレスはダミーです。なにかあればISSUEに記載してください。
-
 # License
 
 MIT
