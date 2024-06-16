@@ -30,7 +30,7 @@ era.name(era = c("south", "north", "east", "heishi", "kyoto"))
 \item{existence}{Whether to return the existence of a leap month as a theoretical type or as a leap month number.}
 }
 \description{
-This is a set of utility functions related to the Kyureki calendar. `number_kyureki.month()` checks how many days there were in a month by specifying the number of years and months in the Kyureki calendar. `exixtence_leap.month()` checks if there was a leap month in a year by entering the number of years in the Kyureki calendar.
+This is a set of utility functions related to the Kyureki calendar. `number_kyureki.month()` checks how many days there were in a month by specifying the number of years and months in the Kyureki calendar. `existence_leap.month()` checks if there was a leap month in a year by entering the number of years in the Kyureki calendar.
 `era.name()` will output the era names of the corresponding year in this package.
 }
 \examples{
