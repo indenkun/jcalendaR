@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
+**English version of README is not available for now.**
+
 `jcalendaR`はRで和暦と旧暦、西暦（ユリウス暦、（先発）グレゴリウス暦）の年月日を相互変換を行うためのパッケージです。
 
 ## 機能
