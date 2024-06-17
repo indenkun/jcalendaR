@@ -45,7 +45,13 @@
 
 ## Installation
 
-Githubからインストールできます。
+リリース版はCRANからインストールできます。
+
+``` r
+install.package("jcalendaR")
+```
+
+開発版はGithubからインストールできます。
 
 ``` r
 remotes::install_github("indenkun/jcalendaR")
