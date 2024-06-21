@@ -5,8 +5,10 @@ Version: 0.1.0
 Authors@R: person("Mao", "Kobayashi", email = "kobamao.jp@gmail.com",
                   role = c("aut", "cre"))
 Description: This is a set of simple utility functions to perform mutual conversion between the current Japanese calendar system that Wareki, the old Japanese calendar system that the Kyureki calendar and the Julian and Gregorian calendar.
-    To calculate each calendar method, it convert to Julian Day Number.
+    To calculate each calendar method, it converts to the Julian Day Number.
 License: MIT + file LICENSE
+URL: https://github.com/indenkun/jcalendaR
+BugReports: https://github.com/indenkun/jcalendaR/issues
 Encoding: UTF-8
 LazyData: true
 Depends: 

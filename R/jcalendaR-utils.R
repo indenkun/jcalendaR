@@ -7,6 +7,13 @@
 #' @param kyureki.month The number of strings of months in the Kyureki calendar to check.
 #' @param era Whether the Gengo of the Japanese calendar is the Southern or Northern dynasty system, the system used in the Kanto region, the Heike, and Kyoto respectively, or no era names.
 #'
+#' @returns
+#' * `number_kyureki.month()` returns a numeric vector.
+#'
+#' * `existence_leap.month()` returns a numeric vector or logical vector.
+#'
+#' * `era.name()` returns a string vector that the era names of the corresponding year in this package.
+#'
 #' @references
 #' The data for the Kyureki calendar and era names refer to the following data.
 #'

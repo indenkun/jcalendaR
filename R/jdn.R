@@ -8,14 +8,19 @@
 #'
 #' @rdname jdn
 #'
+#' @returns
+#' * `jdn2calendar` returns a string type date.
+#'
+#' * `calendar2jdn` returns a a numeric vector.
+#'
 #' @references
 #' Julian Day Number - Wikipedia [ja] (JD, \url{https://ja.wikipedia.org/wiki/\%E3\%83\%A6\%E3\%83\%AA\%E3\%82\%A6\%E3\%82\%B9\%E9\%80\%9A\%E6\%97\%A5})
 #'
-#' Fliegel, H. F., Van Flandern, T. C. (1968) "A Machine Algorithm for Processing Calendar Dates", Communications of the ACM 11, p. 657, \doi{10.1145/364096.364097} .
+#' Fliegel, H. F., Van Flandern, T. C. (1968), \doi{10.1145/364096.364097}, "A Machine Algorithm for Processing Calendar Dates", Communications of the ACM 11, p. 657.
 #'
-#' Hatcher, D. A. (1984) Simple formulae for Julian day numbers and calendar dates, Quarterly Journal of the Royal Astronomical Society, v. 25, p. 53-55, BibCode:1984QJRAS..25...53H.
+#' Hatcher, D. A. (1984, BibCode:1984QJRAS..25...53H) "Simple formulae for Julian day numbers and calendar dates, Quarterly Journal of the Royal Astronomical Society", v. 25, p. 53-55, \url{https://adsabs.harvard.edu/full/1984QJRAS..25...53H}.
 #'
-#' Meeus, J. (1998) Astronomical Algorithms. Willmann-Bell, Second English Edition, ISBN:0943396638.
+#' Meeus, J. (1998, ISBN:0943396638) "Astronomical Algorithms. Willmann-Bell", Second English Edition.
 #'
 #' @examples
 #' jdn2calendar(2459216)
